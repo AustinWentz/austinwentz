@@ -7,7 +7,6 @@ export default function App() {
   return (
     <React.Fragment>
         <NavigationBar />
-        <PictureGrid />
     </React.Fragment>
   )
 }

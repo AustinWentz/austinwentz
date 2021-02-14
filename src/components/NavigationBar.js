@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles, withStyles } from '@material-ui/core/styles'
 import { AppBar, Tab, Tabs, Typography } from '@material-ui/core'
-import { Info, Subject, AccountTree, GitHub, PhotoCamera } from '@material-ui/icons'
+import { Info, Subject, GitHub, PhotoCamera } from '@material-ui/icons'
 import PictureGrid from './PictureGrid'
 
 const StyledTabs = withStyles({
@@ -63,7 +63,6 @@ export default function NavigationBar() {
             <StyledTabs value={value} onChange={handleChange} aria-label="styled tabs example" centered>
                 <StyledTab label="About Me" icon={<Info />}/>
                 <StyledTab label="Resume" icon={<Subject />}/>
-                <StyledTab label="Projects" icon={<AccountTree />}/>
                 <StyledTab label="GitHub" icon={<GitHub />}/>
                 <StyledTab label="Photos" icon={<PhotoCamera />}/>
             </StyledTabs>
